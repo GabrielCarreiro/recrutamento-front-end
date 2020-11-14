@@ -10,10 +10,17 @@ const Login = () =>{
            {singUp ? <FormRegister/> : <FormLogin/>}
             <InfoCard>
                 <div>
-                    <h2> Bem vindo</h2>
-                    <p> Ainda não possui conta ? </p> 
-                    <p> Casdastra-se agora mesmo </p>
-                    <button onClick={()=> setSingUp(!singUp)}> Cadastrar </button>
+                   {!singUp ? 
+                        <span>  
+                            <h2> Bem vindo</h2>
+                            <p> Ainda não possui conta ? </p> 
+                            <p> Casdastra-se agora mesmo </p>
+                        </span>
+                        :
+                        ''}
+                    <button onClick={()=> setSingUp(!singUp)}> 
+                        {singUp ? 'Login' : 'Cadastrar'} 
+                    </button>
                 </div>
             </InfoCard>
         </Container>

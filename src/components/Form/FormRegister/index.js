@@ -5,9 +5,8 @@ const FormRegister = ()=>{
     return(
         <CardRegister>
             <div>
-                <input type="text" placeholder="Nome"/>
                 <input type="email" placeholder="Email"/>
-                <input type="password" placeholder="Senha"/>
+                <input type="email" placeholder="Confirme seu email"/>
                 <button> Cadastrar </button> 
             </div>
         </CardRegister>

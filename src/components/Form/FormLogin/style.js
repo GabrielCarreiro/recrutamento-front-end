@@ -6,12 +6,13 @@ export const CardLogin = styled.div`
     justify-content: center;
     align-items: center;
 
-    div{
+    form{
         display: block;
 
         input{
             display: block;
             width: 270px;
+            height: 32px;
             margin: 15px 0;
             padding: 4px 10px;
             border-radius: 15px; 
@@ -31,7 +32,7 @@ export const CardLogin = styled.div`
 
         button{
             width: 170px;
-            height: 34px;
+            height: 32px;
             margin-top: 10px;
             margin-left: 50px;
             border-radius: 15px;

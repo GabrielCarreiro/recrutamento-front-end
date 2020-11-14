@@ -1,15 +1,19 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppProvider from './hooks';
 import GlobalStyle from './styles/global';
-import Login from './pages/Login'
-
+import Routes from './routes/index';
 
 function App() {
     return (
         <> 
-            <Login/>
+            <BrowserRouter>
+                <AppProvider>
+                    <Routes/>
+                </AppProvider>
+            </BrowserRouter>
             <GlobalStyle/>
         </>
     );
 }
-
 export default App;

@@ -12,10 +12,11 @@ export const CardRegister = styled.div`
         input{
             display: block;
             width: 270px;
+            height: 32px;
             margin: 15px 0;
-            padding: 4px 7px; 
-            border: 0;
-            border-bottom: 1px solid #0196f4;
+            padding: 4px 10px;
+            border-radius: 15px; 
+            border: 1px solid #0196f4;
 
             & + input{
                 margin-bottom: 5px;
@@ -35,7 +36,7 @@ export const CardRegister = styled.div`
 
         button{
             width: 170px;
-            height: 34px;
+            height: 32px;
             margin-top: 10px;
             margin-left: 50px;
             border-radius: 15px;
