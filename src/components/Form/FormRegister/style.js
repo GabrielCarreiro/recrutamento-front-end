@@ -6,7 +6,7 @@ export const CardRegister = styled.div`
     justify-content: center;
     align-items: center;
 
-    div{
+    form{
         display: block;
 
         input{

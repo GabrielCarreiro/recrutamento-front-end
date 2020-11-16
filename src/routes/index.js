@@ -5,6 +5,7 @@ import Api from '../services/api';
 import Route from './route';
 import Login from '../pages/Login';
 import Dashboard from '../pages/Dashboard';
+import SendPass from '../pages/SendPassword';
 
 /* Definindo as rotas da aplicação */
 const Routes = () =>{
@@ -26,6 +27,8 @@ const Routes = () =>{
     return(
         <Switch>
             <Route path="/" component={Login} exact/>
+            <Route path="/send/pass" component={SendPass} exact />
+            <Route path="/send/pass/:type" component={SendPass} />
             <Route path="/dashboard" component={Dashboard} isPrivate/>
         </Switch>
     )

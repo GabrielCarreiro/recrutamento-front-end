@@ -1,4 +1,5 @@
 import React, { useState, useCallback } from 'react';
+import Api from '../../../services/api';
 import { useAuth } from '../../../hooks/auth';
 import { CardLogin } from './style';
 
@@ -9,7 +10,6 @@ const FormLogin = ()=>{
 
     const handleSubmit = useCallback(
         async(e)=>{
-            console.log('Sucesso')
             e.preventDefault();
             try {
                 await signIn(email, password);
@@ -18,6 +18,18 @@ const FormLogin = ()=>{
                 console.log(error, 'error')
             }
     },[email, password, signIn]);
+
+    const forgotPass = useCallback(
+        async()=>{
+            try {
+                if(!email) return;
+               
+                await Api.post(`/send/key/forgot`, {email});
+                console.log('sucesso')
+            } catch (error) {
+                console.log(error, 'error')
+            }
+    },[email]);
 
     return (
         <CardLogin>
@@ -30,7 +42,7 @@ const FormLogin = ()=>{
                 placeholder="Senha"
                 onChange={e => setPassword(e.target.value)}/>
                 
-                <small> Esqueceu a senha ? </small>
+                <small onClick={() => forgotPass()}> Esqueceu a senha ? </small>
                 <button type='submit'> Acessar </button> 
             </form>
         </CardLogin>

@@ -1,6 +1,6 @@
 import React, {useState, useEffect, useCallback, useMemo} from 'react';
 import Api from '../../services/api';
-import { FaServer, FaPowerOff } from 'react-icons/fa';
+// import { FaServer, FaPowerOff } from 'react-icons/fa';
 import { CardServer, Container } from './style';
 
 const Card = ({value})=>{
