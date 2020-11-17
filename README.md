@@ -10,9 +10,8 @@
  
 ## ✍ Descrição
 
- O projeto web nuvem foi proposto como avaliação, e tem no seu escopo o desenvolvimento de uma tela de cadastro, tela de login, tela do dashboard listando
- todos os servidores com suas informações. Ao realizar o cadastrato o usuário recebe um email com um código contendo as instruções para se cadastrar no sistema.
- Na tela de dashboard é possível visualizar todos os servidores e realizar uma pesquisa usando o código ou nome, e ao lado direito da tela compõe um gráfico 
+ O projeto web nuvem foi proposto como avaliação e tem no seu escopo o desenvolvimento de uma tela de cadastro, tela de login, tela do dashboard listando
+ todos os servidores com suas devidas informações. Ao iniciar o processo de cadastro, o usuário receberá um email com um código contendo as instruções para se cadastrar no         sistema.Na tela de dashboard é possível visualizar todos os servidores e realizar uma pesquisa usando o código ou nome e ao lado direito da tela compõe um gráfico 
  exibindo o total de servidores *ligados* e *desligados*. 
 
  ## 💻 Instalação e execução
