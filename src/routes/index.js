@@ -11,13 +11,13 @@ import SendPass from '../pages/SendPassword';
 const Routes = () =>{
     const { signOut } = useAuth();
     
-    const load_verification = useCallback(
-        async () => {
+    /* Função que verifica a expiração do token, quando acaba o tempo faz o logout da aplicação */
+    const load_verification = useCallback(async() => {
         try {
             await Api.get(`verification`);
         } catch (error) {
             signOut();
-        }
+        };
     },[signOut])
 
     useEffect(()=>{

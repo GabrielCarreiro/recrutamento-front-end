@@ -1,14 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin: 70px 0;
-    width: 100%;
+    margin: 100px auto;
+    width: 900px;
     height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    overflow: hidden; 
 
     @media(max-width: 700px){
         margin: 10px 0;

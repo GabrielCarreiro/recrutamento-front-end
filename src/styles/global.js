@@ -13,10 +13,6 @@ export default createGlobalStyle`
         background-color: #f5f5f5;
     }
 
-    html, body, #root{
-        height: 100% 
-    }
-
     body, input, button, select{
         font: 16px 'Roboto', sans-serif;
     }
@@ -38,8 +34,6 @@ export default createGlobalStyle`
     }
 
     #root{
-        max-width: 900px;
         margin: 0 auto;
-        padding: 40px 20px;
     }
 `;

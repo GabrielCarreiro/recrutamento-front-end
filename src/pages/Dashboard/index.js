@@ -1,21 +1,16 @@
-import React, { useState } from 'react';
-import { Container, Header } from './style';
-import Card from '../../components/Card';
+import React from 'react';
+import { Container } from './style';
+import Header from '../../components/Header';
+import Table from '../../components/Table';
+import Graphic from '../../components/Graphic';
 
 const Dashboard = ()=>{
-    const [filter, setFilter] = useState();
-
     return(
-        <>
-            <Header>
-                NuvemWeb
-                <input type='text' 
-                placeholder='Pesquise aqui'
-                onChange={e => setFilter(e.target.value.toLowerCase())}/>
-
-            </Header>
+        <>  
+            <Header/>
             <Container>
-                <Card value={filter}/>
+                <Table/>
+                <Graphic/>
             </Container>
         </>
     )

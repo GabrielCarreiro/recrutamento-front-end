@@ -1,16 +1,25 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin: 130px auto;
+    margin: 150px auto;
     width: 500px;
     height: 350px;
-    display: flex;
+    padding: 10px 0;
+    display: grid;
     justify-content: center;
     align-items: center;
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.4);
 
+    img{
+        margin-left: 50px;
+        margin-top: 10px;
+        width: 220px;
+        height: 90px;
+    }
+
     form{
+        padding-bottom: 20px;
         display: block; 
 
         input{
@@ -33,7 +42,9 @@ export const Container = styled.div`
 
 
         button{
-            display: block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 170px;
             height: 32px;
             margin-top: 10px;

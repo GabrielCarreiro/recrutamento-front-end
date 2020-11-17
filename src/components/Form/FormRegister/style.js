@@ -2,10 +2,17 @@ import styled from 'styled-components';
 
 export const CardRegister = styled.div`
     width: 50%;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 
+    img{
+        margin-left: 40px;
+        width: 220px;
+        height: 90px;
+    }
+    
     form{
         display: block;
 
@@ -35,6 +42,9 @@ export const CardRegister = styled.div`
         }
 
         button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 170px;
             height: 32px;
             margin-top: 10px;

@@ -2,16 +2,20 @@ import React, { useCallback, useState, useContext, createContext } from 'react';
 import Api from '../services/api';
 const AuthContext = createContext({});
 
+/* Autenticação do usuário na aplicação, sempre que a pagina é atualizada verifica se o token está salvo no
+localStorage .  */
 const AuthProvider = ({ children }) => {
     const [data, setData] = useState(() => {
         const token = localStorage.getItem('@APP:token');
         if (token) {
-            Api.defaults.headers.common[`token`] = `${token}`
+            Api.defaults.headers.common[`token`] = `${token}`;
             return {token};
-        }
+        };
         return {}
     });
 
+    /* Função que recebe email e a senha do ussuário e faz a requisição na rota de login,
+    se retornar o token armazena no local storage e salva o token nas configurações do axios. */
     const signIn = useCallback(async (email, password) => {
       
         const response = await Api.post(`login`, {email, password});
@@ -24,9 +28,10 @@ const AuthProvider = ({ children }) => {
             setData({ token });
         } else {
             throw new Error('Usuário ou senha inválido');
-        }
+        };
     }, []);
 
+    /* Função que remove o token salvo */
     const signOut = useCallback(() => {
         localStorage.removeItem('@APP:token');
         setData({});
