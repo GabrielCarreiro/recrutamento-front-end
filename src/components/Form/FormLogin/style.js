@@ -7,6 +7,13 @@ export const CardLogin = styled.div`
     align-items: center;
     margin-bottom: 60px;
 
+    @media(max-width: 700px){
+        display: grid;
+        width: 100%;
+        max-height: 50%;
+        margin-bottom: 40px;
+    }
+
     img{
         margin-left: 40px;
         width: 220px;
@@ -15,6 +22,7 @@ export const CardLogin = styled.div`
 
     form{
         display: block;
+        text-align: center;
 
         input{
             display: block;
@@ -58,10 +66,5 @@ export const CardLogin = styled.div`
                 border: 1px solid #0196f4;
                 color: #0196f4;
             }
-    }
-    
-    @media(max-width: 700px){
-        max-height: 50%;
-        width: 100%;
     }
 `;

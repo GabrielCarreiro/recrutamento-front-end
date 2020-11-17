@@ -12,12 +12,9 @@ export const Container = styled.div`
     overflow: hidden; 
 
     @media(max-width: 700px){
-        margin: 10px 0;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 300px;
+        margin: 15% auto;
+        display: block;
+        width: 90%;
     }
 `;
 
@@ -28,6 +25,13 @@ export const InfoCard = styled.div`
     justify-content: center;
     align-items: center;
     background-color: #0196f4;
+
+    @media(max-width: 700px){
+        display: grid;
+        width: 100%;
+        max-height: 50%;
+        padding-bottom: 50px;  
+    }
 
     div{
         text-align: center;
@@ -59,10 +63,5 @@ export const InfoCard = styled.div`
                 color: #0196f4;
             }
         }
-    }
-
-    @media(max-width: 700px){
-        height: 50%;
-        width: 100%;
     }
 `;

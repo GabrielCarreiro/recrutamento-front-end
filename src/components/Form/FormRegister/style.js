@@ -7,6 +7,13 @@ export const CardRegister = styled.div`
     align-items: center;
     margin-bottom: 50px;
 
+    @media(max-width: 700px){
+        display: grid;
+        width: 100%;
+        max-height: 50%;
+        margin-bottom: 20px;
+    }
+
     img{
         margin-left: 40px;
         width: 220px;
@@ -61,10 +68,5 @@ export const CardRegister = styled.div`
                 border: 1px solid #0196f4;
                 color: #0196f4;
             }
-    }
-    
-    @media(max-width: 700px){
-        max-height: 50%;
-        width: 100%;
     }
 `;
