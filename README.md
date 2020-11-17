@@ -33,7 +33,7 @@
 **Axios** 👉🏻 Cliente HTTP baseado em promises para fazer requisições no backend.<br>
 **React Loading** 👉🏻 Biblioteca para animações de carregamento no sistema.<br>
 **React Toastify** 👉🏻 Biblioteca utilizada para adicionar notificações no sistema.<br>
-**React Chartjs 2** 👉🏻 Biblioteca utilizada para gerar os graficos.
+**React Chartjs 2** 👉🏻 Biblioteca utilizada para gerar os graficos.<br>
 **React Router Dom** 👉🏻 Biblioteca para gerenciar e configurar as rotas do sistema.<br>
 **Styled Components** 👉🏻 Ferramenta CSS-in-JS usada para fazer a ponte entre componentes e estilo.<br>
 
